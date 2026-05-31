@@ -1,0 +1,13 @@
+<div style="text-align: center;">
+<h2 style="margin-bottom: 30px;">Регистрация</h2>
+<form action="{{post}}" method="POST">
+<p><input type="text" name="login" autofocus placeholder="Логин"/></p>
+<p><input type="text" name="email" placeholder="Адрес электронной почты"/></p>
+<p><input type="text" name="name" placeholder="Ф.И.О."/></p>
+<p><input type="text" name="phone" placeholder="Телефон"/></p>
+<p><input type="password" name="pass1" placeholder="Пароль"/></p>
+<p><input type="password" name="pass2" placeholder="Подтвердите пароль"/></p>
+<input type="submit" name="doRegister" value="&nbsp;&nbsp;&nbsp;Зарегистрировать&nbsp;&nbsp;&nbsp;" style="background-color: #481907; color: #FFF"/>
+</form>
+{{={{msg_err}}%%<span style="color: red;">{{msg_err}}</span>}}
+</div>

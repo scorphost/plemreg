@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="{{site/lang}}">
+<head>
+	<meta charset="UTF-8">
+	<title>{{site/title}}</title>
+{{:css^pdgr}}
+{{:css^global}}
+</head>
+<body>
+<div id="myModal" class="xmodal">
+	<span class="xclose">&times;</span>
+	<img class="xmodal-content" id="img_src">
+	<div id="xcaption"></div>
+</div>
+<script>
+function popup($img_no) {
+	var modal = document.getElementById('myModal');
+	var img = document.getElementById('imgs' + $img_no);
+	var modalImg = document.getElementById('img_src');
+	var captionText = document.getElementById('xcaption');
+	var span = document.getElementsByClassName('xclose')[0];
+	modal.style.display = 'block';
+	modalImg.src = img.src;
+	captionText.innerHTML = img.alt;
+	span.onclick = function() { modal.style.display = 'none'; }
+}
+function askName(id, navi, pid, name) {
+	var xhttp = new XMLHttpRequest();
+	var pname = '';
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			pname = this.responseText;
+			navi.innerHTML = '<a onClick="loadTree(' + pid + ')">'
+				+ name + '</a>&nbsp;&gt;&gt&nbsp;' + pname;
+		}
+	};
+	xhttp.open('GET', '/api/ajax.php?m=name&id=' + id);
+	xhttp.send();
+	return name;
+}
+function loadTree(id) {
+	var pid = {{js/pid}};
+	var name = '{{js/name}}';
+	var navi = document.getElementById('tree_root');
+	var xhttp = new XMLHttpRequest();
+	if (id != pid) {
+		askName(id, navi, pid, name);
+	} else {
+		navi.innerHTML = name;
+	}
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			document.getElementById('dtbl1').innerHTML = this.responseText;
+			document.getElementById('target1').scrollIntoView();
+		}
+	};
+	xhttp.open('GET', '/api/ajax.php?m=tree&id=' + id + '&pid=' + pid);
+	xhttp.send();
+}
+</script>
+<div class="navi"><span>{{:unit^navi}}</span></div>
+
+<p>{{home}}</p>
+
+<h4>Информация по {{me/sex}}: <b>{{me/name}}</b> ({{me/reg_code}})</h4>
+
+<p><b>Отец:</b> {{fa/name}} ({{fa/reg_code}})</p>
+<p><b>Мать:</b> {{mo/name}} ({{mo/reg_code}})</p>
+
+<p><b>Основная информация</b> {{me/edit1}}:</p>
+<div style="width:100%; overflow:hidden;">
+   <div class="scroll">
+      <p>{{me/table}}</p>
+   </div>
+</div>
+<hr />
+<p><b>Галерея</b></p>
+{{&is_admin%%<form action="{{photo/post}}" method="POST" enctype="multipart/form-data">
+<p>Добавить фото в галерею: <input type="file" name="filename"></p>
+<input type="submit" name="doPhoto" value="Обновить" />
+</form>}}
+<div>{{me/gallery}}</div>
+<hr />
+
+<p id="target1"><b>Родословная:</b> <span id="tree_root">{{me/chain}}</span></p>
+<div id="dtbl1">{{me/gen_tree}}</div>
+<hr />
+
+<p style="font-weight:bold;">Потомство:</p>
+<div>{{me/children}}</div>
+<hr />
+
+<!-- <p style="font-weight:bold;">Таблица инбридинга:</p>
+<div>{{me/inbreed}}</div>
+<hr /> -->
+<p><b>Сводная таблица по прямым потомкам (1-е поколение):</b></p>
+<div style="width:100%; overflow:hidden;">
+   <div class="scroll">
+      <p>{{me/kids}}</p>
+   </div>
+</div>
+<hr />
+
+<p><b>Данные по лактации:</b> {{me/lact_add}}</p>
+<div>{{me/lact}}</div>
+<hr />
+<p><b>Собственная молочная продуктивность:</b> {{me/milk_add}}</p>
+<div>{{me/milk}}</div>
+<hr />
+<p><b>Экспертная оценка:</b> {{me/test_add}}</p>
+<div>{{me/test}}</div>
+{{&is_admin%%<hr />
+<p>{{me/cert1}} | {{me/cert2}}</p>}}
+
+{{&is_admin%%<hr />
+<form action="{{me/cert_post}}" method="POST">
+<p><b>Данные по лактации для сертификата:</b>  <input type="submit" name="doCert" value="Обновить" /></p>
+<p>
+{{me/cert_lact}}
+</p>
+</form>}}
+
+{{&is_admin%%<hr />
+Движение животного:<br />
+{{me/move_show}} | {{me/move_add}}
+}}
+
+<script>
+function getInvite(id) {
+	var xhttp = new XMLHttpRequest();
+	var hrs = document.getElementById('invite_hrs').value;
+	var gens = document.getElementById('invite_gens').value;
+
+
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var url = this.responseText;
+			var r = document.getElementById('invite_url');
+			r.value = url;
+		}
+	};
+	xhttp.open('GET', '/api/ajax.php?m=invite&id='
+	 + id + '&h=' + hrs + '&g=' + gens);
+	xhttp.send();
+	return url;
+
+}
+</script>
+{{&is_admin%%<hr />
+<p><b>Инвайт на эту страницу:</b> На сколько часов: <input style="width: 30px;" type="text" id="invite_hrs" value="1" /> Поколений: <input style="width: 30px;" type="text" id="invite_gens" value="2" /><br />
+<p><input style="width: 500px;" type="text" id="invite_url" value="" /></p>
+<input id="invite_url"  onClick="getInvite({{js/pid}})" type="button" value="Получить" /></p>
+}}
+</body>
+</html>

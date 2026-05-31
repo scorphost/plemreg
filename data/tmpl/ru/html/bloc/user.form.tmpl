@@ -1,0 +1,10 @@
+--
+<form action="{{post_uri}}" method="POST">
+<p>{{sel/is_apk}} Член АПК</p>
+<p>{{sel/active}} Активный</p>
+<p><input type="text" name="{{users/email/n}}" value="{{users/email/v}}" placeholder="" /> Электронная почта</p>
+<p><input type="text" name="{{users/name/n}}" value="{{users/name/v}}" placeholder="" /> Ф.И.О</p>
+<p><input type="text" name="{{users/phone/n}}" value="{{users/phone/v}}" placeholder="" /> Телефон</p>
+<p><input type="text" name="newpass" placeholder="" /> Новый пароль</p>
+<input type="submit" name="{{post_act}}" value="Записать" />
+</form>

@@ -1,0 +1,17 @@
+{{back}}
+<h3>Движение животного</h3>
+<form action="{{post}}" method="POST">
+
+<input type="hidden" name="id_goat" value="{{id}}" />
+<input type="hidden" name="id_farm_of" value="{{id_farm}}" />
+
+<p>Перемещаем с <b>"{{farm_out}}"</b></p>
+<p>{{sel/farms}}</p>
+<p>{{sel/reason}}</p>
+
+<p><input type="text" name="date_return" value="" placeholder="Дата возврата (аренда)" /></p>
+
+<p><textarea rows="10" name="info" value="" placeholder="Дополнительная информация" /></textarea></p>
+
+<input type="submit" name="doMove" value="Записать"/>
+</form>

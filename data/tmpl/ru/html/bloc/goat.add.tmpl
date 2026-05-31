@@ -1,0 +1,47 @@
+--
+<p>{{post_back}}</p>
+<form action="{{post_uri}}" method="POST" enctype="multipart/form-data">
+<p>
+<input type="hidden" name="pid" value="{{pid}}"/>
+<input type="hidden" name="sid" value="{{sid}}"/>
+<input type="text" name="{{animals/name/n}}" value="{{animals/name/v}}" placeholder="Кличка" size="140" /></p>
+<p>{{sel/sex}} Пол</p>
+<p>{{sel/status}} Статус</p>
+<p>{{sel/is_reg}} Тип записи</p>
+<p>{{sel/is_abg}} Членство в ABG</p>
+<p>{{sel/breed}} Порода</p>
+<p>{{sel/stoodbook}} Племкнига</p>
+<p>{{sel/farm}} Ферма</p>
+
+<p><input type="text" name="{{goats_data/date_born/n}}" value="{{goats_data/date_born/v}}" placeholder="Дата рождения" />
+<input type="text" name="{{goats_data/date_dead/n}}" value="{{goats_data/date_dead/v}}" placeholder="Дата смерти" /></p>
+
+<p><input type="text" name="{{goats_data/born_weight/n}}" value="{{goats_data/born_weight/v}}" placeholder="Вес при рождении (г)" />
+<input type="text" name="{{goats_data/born_qty/n}}" value="{{goats_data/born_qty/v}}" placeholder="Родилась/родился в количестве" />
+<input type="text" name="{{goats_data/score/n}}" value="{{goats_data/score/v}}" placeholder="Оценочный балл" /></p>
+
+<p>
+<input type="text" name="{{goats_data/manuf/n}}" value="{{goats_data/manuf/v}}" placeholder="Заводчик" />
+<input type="text" name="{{goats_data/owner/n}}" value="{{goats_data/owner/v}}" placeholder="Владелец" />
+</p>
+
+<p><input type="text" name="{{goats_data/code_ua/n}}" value="{{goats_data/code_ua/v}}" placeholder="ID number UA" />
+<input type="text" name="{{goats_data/code_abg/n}}" value="{{goats_data/code_abg/v}}" placeholder="ID number ABG" />
+<input type="text" name="{{goats_data/code_farm/n}}" value="{{goats_data/code_farm/v}}" placeholder="ID по ФХ" /><br />
+<input type="text" name="{{goats_data/code_chip/n}}" value="{{goats_data/code_chip/v}}" placeholder="ID чипа" />
+<input type="text" name="{{goats_data/code_int/n}}" value="{{goats_data/code_int/v}}" placeholder="ID international" />
+<input type="text" name="{{goats_data/code_brand/n}}" value="{{goats_data/code_brand/v}}" placeholder="Тавро/клеймо" /></p>
+<p><input type="text" name="{{goats_data/cert_serial/n}}" value="{{goats_data/cert_serial/v}}" placeholder="Сертификат/Серия" />
+<input type="text" name="{{goats_data/cert_no/n}}" value="{{goats_data/cert_no/v}}" placeholder="Сертификат/Номер" />
+</p>
+
+<p>{{sel/horns_type}} Рогатость</p>
+<p>{{sel/have_gen}} Генетический паспорт</p>
+<p><textarea name="{{goats_data/gen_mat/n}}" rows="5" placeholder="Генетический материал животного" >{{goats_data/gen_mat/v}}</textarea>
+<textarea name="{{goats_data/source/n}}" rows="5" placeholder="Источник полученной информации" >{{goats_data/source/v}}</textarea>
+<textarea name="{{goats_data/special/n}}" rows="5" placeholder="Особые отметки" >{{goats_data/special/v}}</textarea>
+</p>
+
+<p>Фото: <input type="file" name="filename"></p>
+<input type="submit" name="{{post_act}}" value="Записать" />
+</form>

@@ -1,0 +1,22 @@
+{{back}}
+<h3>Данные по лактации</h3>
+<form action="{{post}}" method="POST">
+
+<p><input type="text" name="{{goats_lact/viewer/n}}" value="{{goats_lact/viewer/v}}" placeholder="Потомок/предок" /></p>
+
+<p><input type="text" name="{{goats_lact/lact_no/n}}" value="{{goats_lact/lact_no/v}}" placeholder="Номер лактации" /></p>
+
+<p><input type="text" name="{{goats_lact/lact_days/n}}" value="{{goats_lact/lact_days/v}}" placeholder="Дней лактаций" /></p>
+
+<p><input type="text" name="{{goats_lact/milk/n}}" value="{{goats_lact/milk/v}}" placeholder="Удой за лактацию в кг" /></p>
+
+<p><input type="text" name="{{goats_lact/fat/n}}" value="{{goats_lact/fat/v}}" placeholder="Жир %" /></p>
+
+<p><input type="text" name="{{goats_lact/protein/n}}" value="{{goats_lact/protein/v}}" placeholder="Белок %" /></p>
+
+<p><input type="text" name="{{goats_lact/milk_day/n}}" value="{{goats_lact/milk_day/v}}" placeholder="Среднесуточный удой (кг)" /></p>
+
+<p>{{sel/have_graph}}   График лактационной кривой</p>
+
+<input type="submit" name="doLact" value="Записать"/>
+</form>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+<head>
+	<link href="http://plemreg.kozovodstvo.center/css/template.css" rel="stylesheet" />
+	<style>
+
+	h1, h2, h3, h4, h5, h6, .site-title {
+		font-family: 'Open Sans', sans-serif;
+	}
+	body.site {
+		border-top: 3px solid #0088cc;
+		background-color: #f4f6f7;
+	}
+	a {
+		color: #0088cc;
+	}
+	.nav-list > .active > a,
+	.nav-list > .active > a:hover,
+	.dropdown-menu li > a:hover,
+	.dropdown-menu .active > a,
+	.dropdown-menu .active > a:hover,
+	.nav-pills > .active > a,
+	.nav-pills > .active > a:hover,
+	.btn-primary {
+		background: #0088cc;
+	}
+	</style>
+<title>Сертификат с.1</title>
+</head>
+<body class="site com_jshopping view- no-layout task-view itemid-111 fluid">
+	<!-- Body -->
+	<div class="body">
+
+<!--Печать-->
+
+<br>
+<style>
+table.l2a input {
+    text-align: right;
+}
+#rod2 {
+    display: none;
+}
+
+@media print {
+@page { size: portrait; }
+#rod2 {
+    display: none;
+}
+.sysinfo {
+    display: none;
+}
+#comjshop.jshop.productfull, .header, .navigation, .moduletable, .footer, .temp:not(.print) {
+	display:none;
+}
+.breadcrumb > li, .breadcrumb > .active {
+    display: NONE;
+}
+body.site {
+    border-top: 0px solid #0088cc;
+}
+input[type="text"] {
+    width: 130px; border: 0px solid #ccc;
+}
+
+select.sel1 {
+   font-size: 16pt;
+}
+
+}
+
+#rod2 table input[type="text"], #rod1 table input[type="text"] {
+    border: 0px solid #ccc;
+	background-color: #fbf7f7;
+    padding: 0;
+    margin: 0;
+}
+input.a0 {
+	width: 99%;
+}
+input.a1 {
+    width: 100%;
+	text-align: center;
+}
+input.a2 {
+    width: 100%;
+	text-align: center;
+}
+input.a3 {
+    width: 100%;
+	text-align: center;
+}
+input.a4 {
+    width: 100%;
+	text-align: center;
+}
+input.a5 {
+    width: 70%;
+	text-align: center;
+}
+.tab6 input {
+    width: 41%;
+    line-height: 0;
+    height: 8px;
+    margin-top: -6px;
+}
+.tab8 input {
+    width: 41%;
+    line-height: 0;
+    height: 8px;
+    margin-top: -9px;
+}
+.leftk {    float: left;
+	margin-right: 10px;
+    font-size: 16pt;
+}
+.tab2 {
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 0;
+    padding-left: 16px;}
+	span.tab {
+    padding-left: 10px;
+    font-size: 16pt;
+    line-height: 0.4;
+}
+.tab5 { float: left; }
+span.tab7 {
+    float: left;
+    margin-top: -4px;
+}
+/*таблица блока 1*/
+.tableb1, .table2a, .table3a, .table4a {
+	width: 100%;
+    text-align: center;
+	border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border: 2px solid white; /* Прячем рамку вокруг таблицы */
+}
+
+/*конец таблицы блока 1*/
+.table0a th, .table0a tr, .table0a td { border:0px; text-align:left; }
+.l0a th, .l0a tr, .l0a td {border:0px; text-align:left; font-weight: bold; }
+.ll0a th, .ll0a tr, .ll0a td {border:1px solid black; text-align:left; font-weight: bold; padding-left: 4px;}
+select.sel1 {
+    font-size: 20pt;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+   padding: 0px 0 0px 33%;
+		    border: 0px;
+}
+.l1a th, .l1a tr, .l1a td {
+    border: 1px solid;
+    text-align: center;
+}
+
+.l1a input {
+    border: 1px solid;
+    text-align: center;
+}
+
+.l2a { border: 0px solid; }
+.l2a th, .l2a tr, .l2a td {
+	text-align: left; border: 0px solid;
+}
+
+input.lt0 {
+    width: 100%;
+}
+
+input.sel1 {
+    font-size: 20pt;
+    height: 26px;
+    text-align: center;
+    width: 100%;
+	margin-bottom: 5px!important;
+}
+</style>
+
+<div id="rod1" style="margin-top: 160px;">
+
+<div align="center">
+<table class="l0a" style="width: 90%; border:none; font-size: 8pt;">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="6">
+<input type="text" value="{{i_hdr1}}" class="sel1">
+<input type="text" value="{{i_hdr2}}" class="sel1">
+<input type="text" value="{{i_hdr2}}" class="sel1"><br><br>
+</td>
+</tr>
+</table>
+<table class="ll0a" style="width: 90%; font-size: 8pt;">
+<tr>
+<td class="bold" style="width: 5%">Кличка:</td><td><input type="text" value="{{i_name}}" class="a0"></td>
+<td class="bold" style="width: 13%">Порода:</td><td style="width: 20%"><input type="text" value="{{i_breed}}" class="a0"></td>
+<td style="width: 15%">Рогатість:</td><td style="width: 15%"><input type="text" value="{{i_horn}}" class="a0"></td>
+</tr>
+
+<tr>
+<td class="bold">Д.нар.:</td><td><input type="text" value="{{i_dob}}" class="a0"></td>
+<td>Породність:</td><td><input type="text" value="{{i_por}}" class="a0"></td>
+<td>Бал п/н:</td><td><input type="text" value="{{i_score}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>Стать:</td><td><input type="text" value="{{i_sex}}" class="a0"></td>
+<td class="bold">Кровність:</td><td><input type="text" value="{{i_blood}}" class="a0"></td>
+<td>Кіл-ть семʼян.:</td><td><input type="text" value="{{i_semia}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>ID ABG:</td><td><input type="text" value="{{i_code_abg}}" class="a0"></td>
+<td>Нар. в числі:</td><td><input type="text" value="{{i_born_qty}}" class="a0"></td>
+<td>Екс.оц.,к-ть бал.:</td><td><input type="text" value="{{i_test_score}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>ID UA:</td><td><input type="text" value="{{i_code_ua}}" class="a0"></td>
+<td>Вага п/н:</td><td><input type="text" value="{{i_weight}}" class="a0"></td>
+<td>Клас:</td><td><input type="text" value="{{i_class}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>Чіп:</td><td><input type="text" value="{{i_code_chip}}" class="a0"></td>
+<td>Жива вага:</td><td><input type="text" value="{{i_weight_live}}" class="a0"></td>
+<td>Плем.кн.:</td><td><input type="text" value="{{i_stdb}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>Заводчик:</td><td><input type="text" value="{{i_manuf}}" class="a0"></td>
+<td>Масть:</td><td><input type="text" value="{{i_mast}}" class="a0"></td>
+<td colspan="2"></td>
+</tr>
+
+</tbody></table>
+<br /><br /><h3>Племінна цінність і власна продуктивність тварини</h3>
+</div>
+<br />
+
+
+<table class="l0a" style="width: 93%; margin-left: auto; margin-right: auto;" border="0";>
+<tbody>
+<tr>
+<td style="width: 45%;">
+<table class="l1a" style="width: 95%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="width: 25%;" colspan="2">Лактація</td>
+<td style="width: 25%;" colspan="2">Надій</td>
+<td style="width: 25%;" colspan="2">Молочний<br> жир </td>
+<td style="width: 25%;" colspan="2">Молочний<br> білок</td>
+</tr>
+<tr>
+<td>№</td>
+<td>Днів</td>
+<td>кг</td>
+<td>Клас</td>
+<td>%</td>
+<td>Клас</td>
+<td>%</td>
+<td>Клас</td>
+</tr>
+<tr>
+<td><input type="text" value="{{i_lact_no/0}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_day/0}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_kg/0}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_class/0}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_perc/0}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/0}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_prot_perc/0}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/0}}" class="a0"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{i_lact_no/1}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_day/1}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_kg/1}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_class/1}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_perc/1}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/1}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_prot_perc/1}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/1}}" class="a0"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{i_lact_no/2}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_day/2}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_kg/2}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_class/2}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_perc/2}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/2}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_prot_perc/2}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/2}}" class="a0"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{i_lact_no/3}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_day/3}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_kg/3}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_class/3}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_perc/3}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/3}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_prot_perc/3}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/3}}" class="a0"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{i_lact_no/4}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_day/4}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_kg/4}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_milk_class/4}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_perc/4}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/4}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_prot_perc/4}}" class="a0"></td>
+<td><input type="text" value="{{i_lact_fat_class/4}}" class="a0"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="l1a" style="width: 95%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td rowspan="2">Нащадки</td>
+<td rowspan="2">Днів лактації</td>
+<td colspan="2" style="width: 30%;">Надій</td>
+<td colspan="2">Молочний<br> Жир</td>
+<td colspan="2">Молочний білок</td>
+</tr>
+<tr>
+<td>кг</td>
+<td>Клас</td>
+<td>кг</td>
+<td>Клас</td>
+<td>кг</td>
+<td>Клас</td>
+</tr>
+<tr>
+<td><input type="text" value="{{d_lact_cnt/0}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_day/0}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_kg/0}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_class/0}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_perc/0}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_class/0}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_perc/0}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_class/0}}" class="a0"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{d_lact_cnt/1}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_day/1}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_kg/1}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_class/1}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_perc/1}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_class/1}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_perc/1}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_class/1}}" class="a0"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{d_lact_cnt/2}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_day/2}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_kg/2}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_class/2}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_perc/2}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_class/2}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_perc/2}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_class/2}}" class="a0"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{d_lact_cnt/3}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_day/3}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_kg/3}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_class/3}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_perc/3}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_class/3}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_perc/3}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_class/3}}" class="a0"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{d_lact_cnt/4}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_day/4}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_kg/4}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_milk_class/4}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_perc/4}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_fat_class/4}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_perc/4}}" class="a0"></td>
+<td><input type="text" value="{{d_lact_prot_class/4}}" class="a0"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br /><br /><br /><br />
+
+<div align="center">
+<table class="l2a" style="width: 90%;" border="0">
+<tbody>
+<tr>
+<td style="width: 32%; ">Видане (кому), адреса, телефон:</td><td><input type="text" value="{{112}}" class="lt0" style="background-color: #A1F3D5; text-align: left;"></td>
+</tr>
+<tr>
+<td></td><td><input type="text" value="{{113}}" class="lt0" style="background-color: #A1F3D5; text-align: left;"></td>
+</tr>
+<tr>
+<td>Заводчик, адреса, телефон:</td><td><input type="text" value="{{114}}" class="lt0" style="text-align: left; background-color: #A1F3D5;"></td>
+</tr>
+</tbody></table></div>
+
+<br />
+<div align="center">
+<table class="l2a" style="width: 90%;" border="0">
+<tbody>
+<tr>
+<td><b>Recorded correctly<b></td><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<br />
+<div align="center">
+<table class="l2a" style="width: 90%;" border="0">
+<tbody>
+<tr>
+<td><input type="text" style="text-align: left; background-color: #A1F3D5;" value="{{115}}" class="lt0"></td><td></td>
+</tr>
+<tr>
+<td><input type="text" style="text-align: left; background-color: #A1F3D5;" value="{{116}}" class="lt0"></td>
+<td><input type="text" style="text-align: center; background-color: #A1D7F3;" value="{{117}}" class="lt0"></td>
+</tr>
+</tbody></table></div>
+<div align="center">
+<table class="l2a" style="width: 90%;" border="0">
+<tbody>
+<tr>
+<td style="width: 75%;">Дата видачи:</td><td></td>
+</tr><tr>
+<td style="width: 75%;"><input type="text" style="text-align: left; width: 76px;" value="{{date_release}}" class="lt0"></td><td></td>
+</tr>
+</tbody></table></div></div></div></body></html>

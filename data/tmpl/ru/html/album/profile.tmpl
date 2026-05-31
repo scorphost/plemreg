@@ -1,0 +1,13 @@
+<div>
+<div class="hdr2">
+<h3>Мой Профиль</h3>
+<p>Логин: <b>{{profile/login}}</b></p>
+<p>Имя: <b>{{profile/name}}</b></p>
+<p>Электронная почта: <b>{{profile/email}}</b></p>
+<form action="{{profile/post_uri}}" method="POST">
+<p><input type="password" name="pass1" placeholder="Пароль" /></p>
+<p><input type="password" name="pass2" placeholder="Подтвердите пароль" /></p>
+<input type="submit" name="doPassChange" value="Сменить пароль" />
+</form>
+</div>
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{site/lang}}">
+<head>
+	<meta charset="UTF-8">
+	<title>{{site/title}}</title>
+	{{:css^global}}
+</head>
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+<link type="image/x-icon" href="/favicon.ico" rel="icon">
+<body>
+<div style="width: 100%;">
+<div class="root">
+	<div style="float: left;"><a href="http://forum.kozovodstvo.center" target="_blank"><img style="box-shadow: 0 0 30px rgba(160,136,106,0.8);" width="132" height="132" src="/img/forum_kozovodstvo.jpg" alt="Форум" title="Форум"></a></div>
+	<div style="float: right;"><a href="{{:unit^links,f}}"><img style="box-shadow: 0 0 30px rgba(160,136,106,0.8);" width="132" height="132" src="/img/goat_farm.jpg" alt="Список ферм" title="Список ферм"></div></a>
+	<p style="color: #FFF; font-size: 36px; margin-top: 45px;"><b>Breed Register</b></p>
+	<p style="color: #FFF; font-size: 18px; margin-top: 20px;"><b>Ассоциация Племенных Коз</b></p>
+</div>
+<div class="navi">
+	<span>
+		<a href="/ru/catalog/goats"><img src="/img/ico_menu.png" alt="Каталог пород" title="Каталог пород"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://forum.kozovodstvo.center" target="_blank">ФОРУМ</a>&nbsp;&bull;&nbsp;<a href="http://kozovodstvo.center" target="_blank">ПОРТАЛ</a>&nbsp;&bull;&nbsp;<a href="/ru/feedback">ОБРАТНАЯ СВЯЗЬ</a>&nbsp;&bull;&nbsp;<a href="/ru/rules" style="color: red;">ПРАВИЛА</a></span></span>
+	<span style="float: right;">{{:unit^user}}</span>
+	<hr style="margin-top: 20px;"/>
+	<span style="padding: 0; margin: 0;">Вы здесь:&nbsp;&nbsp;{{:unit^navi}}</span>
+</div>
+{{:unit^dash}}
+<div class="row-fluid">
+	<div class="jshop" id="comjshop">
+		<div class="jshop_list_category">{{root/content}}</div>
+	</div>
+</div>
+<div class="foot1">
+<b>Использование материалов разрешается только с согласия автора</b><br />Автор: Алексеева М.В., Разработчик: vortex<br />
+&copy; 2017 A.B.G.
+</div>
+<!-- The Modal -->
+<div id="myModal" class="xmodal">
+	<span class="xclose">&times;</span>
+	<img class="xmodal-content" id="img_src">
+	<div id="xcaption"></div>
+</div>
+<script>
+	function popup($img_no) {
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById('imgs' + $img_no);
+		var modalImg = document.getElementById('img_src');
+		var captionText = document.getElementById('xcaption');
+		var span = document.getElementsByClassName('xclose')[0];
+		modal.style.display = 'block';
+    	modalImg.src = img.src;
+    	captionText.innerHTML = img.alt;
+		span.onclick = function() { modal.style.display = 'none'; }
+	}
+</script>
+</body>
+</html>

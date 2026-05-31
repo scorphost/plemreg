@@ -1,0 +1,16 @@
+<link rel="stylesheet" type="text/css" href="/css/jquery.cleditor.css" />
+<p>{{back}}</p>
+<p>Название фермы:</p>
+<form action="{{post_uri}}" method="POST" enctype="multipart/form-data">
+<p><input type="text" name="name" value="{{name}}" autofocus style="width: 90%;"/></p>
+<p>Описание фермы:</p>
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.cleditor.min.js"></script>
+<script>
+        $(document).ready(function () { $("#input").cleditor(); });
+</script>
+<p><textarea id="input" name="input"></textarea></p><br />
+<p>Фото в окно:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="filename1"></p>
+<p>Фото на страницу:&nbsp;&nbsp;&nbsp;<input type="file" name="filename2"></p>
+<input type="submit" name="{{post_act}}" value="Записать"/>
+</form>

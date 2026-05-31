@@ -1,0 +1,28 @@
+{{back}}
+<h3>Экспертная оценка</h3>
+<form action="{{post}}" method="POST">
+
+<p><input type="text" name="{{goats_test/who_expert/n}}" value="{{goats_test/who_expert/v}}" placeholder="ФИО Эксперта" /></p>
+
+<p><input type="text" name="{{goats_test/date_test/n}}" value="{{goats_test/date_test/v}}" placeholder="Дата проведения аттестации" /></p>
+
+<p>{{sel/test_type}}   Тип аттестации (не проведена/классическая углубленная/аттест молодняка)</p>
+
+<p><input type="text" name="{{goats_test/par_1/n}}" value="{{goats_test/par_1/v}}" placeholder="Высота в холке" /></p>
+
+<p><input type="text" name="{{goats_test/par_2/n}}" value="{{goats_test/par_2/v}}" placeholder="Высота в крестце" /></p>
+
+<p><input type="text" name="{{goats_test/par_3/n}}" value="{{goats_test/par_3/v}}" placeholder="Обхват груди по линии сердца" /></p>
+
+<p><input type="text" name="{{goats_test/par_4/n}}" value="{{goats_test/par_4/v}}" placeholder="Косая длина корпуса" /></p>
+
+<p><input type="text" name="{{goats_test/weight/n}}" value="{{goats_test/weight/v}}" placeholder="Вес животного" /></p>
+
+<p><input type="text" name="{{goats_test/score_total/n}}" value="{{goats_test/score_total/v}}" placeholder="Итоговый балл" /></p>
+
+<p><input type="text" name="{{goats_test/class/n}}" value="{{goats_test/class/v}}" placeholder="Класс" /></p>
+
+<p><input type="text" name="{{goats_test/category/n}}" value="{{goats_test/category/v}}" placeholder="Категория" /></p>
+
+<input type="submit" name="doTest" value="Записать"/>
+</form>

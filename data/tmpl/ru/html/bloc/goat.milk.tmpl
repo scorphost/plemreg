@@ -1,0 +1,29 @@
+{{back}}
+<h3>Молочная продуктивность</h3>
+<form action="{{post}}" method="POST">
+
+<p><input type="text" name="{{goats_milk/par_0/n}}" value="{{goats_milk/par_0/v}}" placeholder="Номер лактации" /></p>
+
+<p><input type="text" name="{{goats_milk/par_1/n}}" value="{{goats_milk/par_1/v}}" placeholder="Кол-во дней лактации" /></p>
+
+<p><input type="text" name="{{goats_milk/par_2/n}}" value="{{goats_milk/par_2/v}}" placeholder="Удой (кг)" /></p>
+
+<p><input type="text" name="{{goats_milk/par_3/n}}" value="{{goats_milk/par_3/v}}" placeholder="Молочный жир (%)" /></p>
+
+<p><input type="text" name="{{goats_milk/par_4/n}}" value="{{goats_milk/par_4/v}}" placeholder="Молочный белок (%)" /></p>
+
+<p><input type="text" name="{{goats_milk/par_5/n}}" value="{{goats_milk/par_5/v}}" placeholder="Лактоза (%)" /></p>
+
+<p><input type="text" name="{{goats_milk/par_6/n}}" value="{{goats_milk/par_6/v}}" placeholder="Суточный пиковый удой (кг)" /></p>
+
+<p><input type="text" name="{{goats_milk/par_7/n}}" value="{{goats_milk/par_7/v}}" placeholder="Среднесуточный удой (кг)" /></p>
+
+<p><input type="text" name="{{goats_milk/par_8/n}}" value="{{goats_milk/par_8/v}}" placeholder="Плотность (кг)" /></p>
+
+<p><input type="text" name="{{goats_milk/par_9/n}}" value="{{goats_milk/par_9/v}}" placeholder="Скорость молокоотдачи (кг/мин)" /></p>
+
+<p><textarea name="{{goats_milk/source/n}}" placeholder="Источник полученной информации" >{{goats_milk/source/v}}</textarea></p>
+
+<p>{{sel/have_graph}}   График лактационной кривой</p>
+<input type="submit" name="doMilk" value="Записать"/>
+</form>

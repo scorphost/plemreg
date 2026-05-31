@@ -1,0 +1,3 @@
+<?php
+/* AJAX POST processor */
+?>

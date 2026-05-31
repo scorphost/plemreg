@@ -1,0 +1,11 @@
+-- goats.show.php -> show_list() -> pre_form
+<div>
+<p>{{add}} &bull; {{show_all}} &bull; {{show_guest}} &bull; {{show_reg}} &bull; {{show_dup}} &bull; {{show_liv}} &bull; {{show_die}} &bull; {{show_und}}</p>
+<p>
+<form action="{{post_uri}}" method="POST">
+<p><input type="text" name="find"  placeholder="Поиск"/></p>
+<input type="submit" style="background-color: #481907; color: #FFF"name="{{post_act}}" value="   Поиск   " />
+</form>
+</p>
+{{list}}
+</div>

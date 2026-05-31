@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+<head>
+<title>Сертификат с.2</title>
+<link href="/css/template.css" rel="stylesheet" />
+<style>
+h1, h2, h3, h4, h5, h6, .site-title {
+    font-family: 'Open Sans', sans-serif;
+}
+body.site {
+    border-top: 3px solid #0088cc;
+    background-color: #f4f6f7;
+}
+a {
+    color: #0088cc;
+}
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover,
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.btn-primary {
+    background: #0088cc;
+}
+</style>
+<!--[if lt IE 9]><script src="/media/jui/js/html5.js"></script><![endif]-->
+</head>
+<body class="site com_jshopping view- no-layout task-view itemid-111 fluid">
+<style>
+@media print {
+@page { size: landscape; }
+#comjshop.jshop.productfull, .header, .navigation, .moduletable, .footer, .temp:not(.print) { display:none; }
+.sysinfo { display: none; }
+.breadcrumb > li, .breadcrumb > .active { display: none; }
+body.site {
+    border-top: 0px solid #0088cc;
+}
+input[type="text"] {
+    width: 130px;
+    border: 0px solid #ccc;
+    font-size: 10px;
+    font-weight: bold;
+}
+select.sel1 {
+    font-size: 20pt;
+    margin-bottom: 50px;
+}
+}
+
+#rod2 table input[type="text"], #rod1 table input[type="text"] {
+    border: 0px solid #ccc;
+    background-color: #fbf7f7;
+    padding: 0;
+    margin: 0;
+    }
+    input.a0 {
+    width: 99%;
+    }
+    input.a1 {
+    width: 100%;
+    text-align: center;
+    }
+    input.a2 {
+    width: 100%;
+    text-align: center;
+    }
+    input.a3 {
+    width: 100%;
+    text-align: center;
+    }
+    input.a4 {
+    width: 100%;
+    text-align: center;
+    }
+    input.a5 {
+    width: 70%;
+    text-align: center;
+    }
+    .tab6 input {
+    width: 41%;
+    line-height: 0;
+    height: 8px;
+    margin-top: -6px;
+    }
+    .tab8 input {
+    width: 41%;
+    line-height: 0;
+    height: 8px;
+    margin-top: -9px;
+    }
+    .leftk {    float: left;
+    margin-right: 10px;
+    font-size: 16pt;
+    }
+    .tab2 {    font-size: 16pt;
+    font-weight: bold;
+    line-height: 0;
+    padding-left: 16px;}
+    span.tab {
+    padding-left: 10px;
+    font-size: 16pt;
+    line-height: 0.4;}
+    .tab5 {float: left;}
+span.tab7 {
+    float: left;
+    margin-top: -4px;
+}
+/*таблица блока 1*/
+.tableb1, .table2a, .table3a, .table4a  {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border: 2px solid white; /* Прячем рамку вокруг таблицы */
+}
+
+    /*конец таблицы блока 1*/
+.table0a th, .table0a tr, .table0a td {
+    border:0px; text-align:left;
+}
+.l0a th, .l0a tr, .l0a td {
+    border:0px; text-align:left; font-weight: bold;
+}
+select.sel1 {
+    font-size: 20pt;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0px 0 0px 33%;
+    border: 0px;
+}
+.l1a th, .l1a tr, .l1a td {
+    border: 1px solid;
+    text-align: center;
+}
+.l2a { border: 0px solid; }
+.l2a th, .l2a tr, .l2a td { text-align: left; border: 0px solid; }
+input.lt0 { width: 100%; }
+input.sel1 {
+    font-size: 20pt;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 6%!important;
+}
+</style>
+
+<div id="rod2">
+<table style="width: 100%; border: 2px solid;"><tbody>
+
+<tr>
+<td style="width: 50%; border-right: 2px solid;" colspan="4">
+<div style="width:60%;">
+<span class="leftk">M</span><span class="tab1">Кличка</span><span class="tab2"><input type="text" value="{{m_name}}" size="40"></span>
+</div>
+</td>
+
+<td colspan="4">
+<div style="width:60%;">
+<span class="leftk">Б</span><span class="tab1">Кличка</span><span class="tab2"><input type="text" value="{{f_name}}" size="40"></span></div></td></tr>
+
+<tr><td colspan="4"  style="border-right: 2px solid;"><!--а0-->
+<table style="width: 100%; border:none;" class="table0a"><tbody>
+
+<tr>
+<td style="width:12%;">ID ABG</td><td><input type="text" value="{{m_code_abg}}" class="a0"></td>
+<td style="width:12%;">Племкнига</td><td><input type="text" value="{{m_stdb}}" class="a0"></td>
+
+<td style="width:12%;">ID UA</td><td><input type="text" value="{{m_code_ua}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>д.н.</td><td><input type="text" value="{{m_dob}}" class="a0"></td>
+<td style="width:12%;">Породність</td><td><input type="text" value="{{m_por}}" class="a0"></td>
+<td>Оц.екс.,бал.:</td><td colspan="3"><input type="text" value="{{m_test_score}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{m_breed}}" class="a0"></td>
+<td>Кровність</td><td><input type="text" value="{{m_blood}}" class="a0"></td>
+<td>Клас</td><td><input type="text" value="{{m_class}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>Власник</td>
+<td colspan="5"><input type="text" value="{{m_owner}}" class="a0"></td>
+</tr>
+
+</tbody></table></td>
+
+<td colspan="4">
+<table class="table0a" style="width: 100%; border: none;"><tbody>
+
+<tr>
+<td style="width:12%;">ID ABG</td><td><input type="text" value="{{f_code_abg}}" class="a0"></td>
+<td style="width:12%;">Племкнига</td><td><input type="text" value="{{f_stdb}}" class="a0"></td>
+
+<td style="width:12%;">ID UA</td><td><input type="text" value="{{f_code_ua}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>д.н.</td><td><input type="text" value="{{f_dob}}" class="a0"></td>
+<td style="width:12%;">Породність</td><td><input type="text" value="{{f_por}}" class="a0"></td>
+<td>Оц.екс.,бал.:</td><td colspan="3"><input type="text" value="{{f_test_score}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{f_breed}}" class="a0"></td>
+<td>Кровність</td><td><input type="text" value="{{f_blood}}" class="a0"></td>
+<td>Клас</td><td><input type="text" value="{{f_class}}" class="a0"></td>
+</tr>
+
+<tr>
+<td>Власник</td>
+<td colspan="5"><input type="text" value="{{f_owner}}" class="a0"></td>
+</tr>
+
+</tbody></table></td></tr>
+
+<tr><td colspan="4" style="border-right: 2px solid; border-bottom: 2px solid;">
+
+<table class="tableb1" class="table1a" border="0"><tbody>
+
+<tr>
+<!-- <td rowspan="2" style="width: 10%;">Рік</td> -->
+<td style="width: 20%;" colspan="2">Днів лактації</td>
+<td style="width: 20%;" colspan="2">Надій</td>
+<td style="width: 20%;" colspan="2">Молочний жир  </td>
+<td style="width: 20%;" colspan="2">Молочний білок  </td>
+</tr>
+
+<tr>
+<td>№</td><td>Днів лактації</td><td>кг</td>
+<td>Клас</td><td>%</td><td>Клас</td><td>%</td><td>Клас</td>
+</tr>
+<tr>
+<td><input type="text" value="{{m_lact_no/0}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_day/0}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_milk_kg/0}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_milk_class/0}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_fat_perc/0}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_fat_class/0}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_prot_perc/0}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_prot_class/0}}" class="a1"></td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{m_lact_no/1}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_day/1}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_milk_kg/1}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_milk_class/1}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_fat_perc/1}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_fat_class/1}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_prot_perc/1}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_prot_class/1}}" class="a1"></td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{m_lact_no/2}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_day/2}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_milk_kg/2}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_milk_class/2}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_fat_perc/2}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_fat_class/2}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_prot_perc/2}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_prot_class/2}}" class="a1"></td>
+</tr>
+
+<tr>
+<td colspan="2">Середні показники</td>
+<td><input type="text" value="{{m_lact_milk_kg_avg}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_milk_class_avg}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_fat_perc_avg}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_fat_class_avg}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_prot_perc_avg}}" class="a1"></td>
+<td><input type="text" value="{{m_lact_prot_class_avg}}" class="a1"></td>
+</tr>
+
+</tbody></table></td>
+
+<td colspan="4" style="border-bottom: 2px solid;">
+
+<table class="tableb1" class="table1a" border="1"><tbody>
+
+<tr style="height: 15px;">
+<td style="width: 10%;">Пращури</td>
+<td style="width: 20%;" colspan="2">Днів лактації</td>
+<td style="width: 20%;" colspan="2">Надій</td>
+<td style="width: 20%;" colspan="2">Молочний жир  </td>
+<td style="width: 20%;" colspan="2">Молочний білок  </td>
+</tr>
+
+<tr>
+<td>Нащадки</td>
+
+<td>№</td><td>Днів лактації</td>
+
+<td>кг</td><td>Клас</td><td>%</td>
+<td>Клас</td><td>%</td><td>Клас</td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{f_lact_cnt/0}}" class="a1"></td>
+<td><input type="text" value="{{f_lact_no/0}}" class="a1"></td>
+<td><input type="text" value="{{f_lact_day/0}}" class="a1"></td>
+<td><input type="text" value="{{f_lact_milk_kg/0}}" class="a1"></td>
+<td><input type="text" value="{{f_lact_milk_class/0}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_fat_perc/0}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_fat_class/0}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_prot_perc/0}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_prot_class/0}}" class="a1"></td>
+</tr>
+
+<tr style="height: 15px;">
+<td style="height: 15px;"><input type="text" value="{{f_lact_cnt/1}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_no/1}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_day/1}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_milk_kg/1}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_milk_class/1}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_fat_perc/1}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_fat_class/1}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_prot_perc/1}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_prot_class/1}}" class="a1"></td>
+</tr>
+
+<tr style="height: 15px;">
+<td style="height: 15px;"><input type="text" value="{{f_lact_cnt/2}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_no/2}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_day/2}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_milk_kg/2}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_milk_class/2}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_fat_perc/2}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_fat_class/2}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_prot_perc/2}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_prot_class/2}}" class="a1"></td>
+</tr>
+
+<tr style="height: 15px;">
+<td style="height: 15px;" colspan="3">Середні показники</td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_milk_kg_avg}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_milk_class_avg}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_fat_perc_avg}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_fat_class_avg}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_prot_perc_avg}}" class="a1"></td>
+<td style="height: 15px;"><input type="text" value="{{f_lact_prot_class_avg}}" class="a1"></td></tr>
+
+</tbody></table></td></tr>
+
+<tr>
+<td style="width: 25%;" colspan="2">
+
+<table style="width: 100%;" class="table2a"><tbody>
+
+<tr>
+<td style="width: 15%; text-align: left;" colspan="4">ММ Кличка <input type="text" value="{{mm_name}}"></td>
+</tr>
+
+<tr>
+<td style="width: 15%;">ID ABG</td><td><input type="text" value="{{mm_code_abg}}" class="a2"></td>
+<td style="width: 15%;">ID UA</td><td><input type="text" value="{{mm_code_ua}}" class="a2"></td>
+</tr>
+
+<tr>
+<td>Племкн.</td>
+<td><input type="text" value="{{mm_stdb}}" class="a2"></td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>д.н.</td>
+<td><input type="text" value="{{mm_dob}}" class="a2"></td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{mm_breed}}" class="a2"></td>
+<td>Оц.екс.бал</td><td><input type="text" value="{{mm_test_score}}" class="a2"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{mm_por}}" class="a2"></td>
+<td>Клас</td><td><input type="text" value="{{mm_class}}" class="a2"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 25%; border-right: 2px solid; border-left: 2px solid;" colspan="2">
+
+<table style="width: 100%;" class="table2a"><tbody>
+
+<tr>
+<td style="width: 15%; text-align: left;" colspan="4">БМ Кличка <input type="text" value="{{fm_name}}"></td>
+</tr>
+
+<tr>
+<td style="width: 15%;">ID ABG</td><td><input type="text" value="{{fm_code_abg}}" class="a2"></td>
+<td style="width: 15%;">ID UA</td><td><input type="text" value="{{fm_code_ua}}" class="a2"></td>
+</tr>
+
+<tr>
+<td>Племкн.</td><td><input type="text" value="{{fm_stdb}}" class="a2"></td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>д.н.</td><td><input type="text" value="{{fm_dob}}" class="a2"></td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{fm_breed}}" class="a2"></td>
+<td>Оц.екс.бал</td><td><input type="text" value="{{fm_test_score}}" class="a2"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{fm_por}}" class="a2"></td>
+<td>Клас</td><td><input type="text" value="{{fm_class}}" class="a2"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 25%; border-right: 2px solid;" colspan="2">
+
+<table style="width: 100%;" class="table2a"><tbody>
+
+<tr>
+<td style="width: 15%; text-align: left;" colspan="4">МБ Кличка <input type="text" value="{{mf_name}}"></td>
+</tr>
+
+<tr>
+<td style="width: 15%;">ID ABG</td><td><input type="text" value="{{mf_code_abg}}" class="a2"></td>
+<td style="width: 15%;">ID UA</td><td><input type="text" value="{{mf_code_ua}}" class="a2"></td>
+</tr>
+
+<tr>
+<td>Племкн.</td><td><input type="text" value="{{mf_stdb}}" class="a2"></td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>д.н.</td>
+<td><input type="text" value="{{mf_dob}}" class="a2"></td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>Порода</td>
+<td><input type="text" value="{{mf_breed}}" class="a2"></td>
+<td>Оц.екс.бал</td>
+<td><input type="text" value="{{mf_test_score}}" class="a2"></td>
+</tr>
+
+<tr>
+<td>Породн.</td>
+<td><input type="text" value="{{mf_por}}" class="a2"></td>
+<td>Клас</td>
+<td><input type="text" value="{{mf_class}}" class="a2"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 25%;" colspan="2">
+
+<table style="width: 100%;" class="table2a"><tbody>
+
+<tr>
+<td style="width: 15%; text-align: left;" colspan="4">ББ Кличка <input type="text" value="{{ff_name}}"></td>
+</tr>
+
+<tr>
+<td style="width: 15%;">ID ABG</td><td><input type="text" value="{{ff_code_abg}}" class="a2"></td>
+<td style="width: 15%;">ID UA</td><td><input type="text" value="{{ff_code_ua}}" class="a2"></td>
+</tr>
+
+<tr>
+<td>Племкн.</td><td><input type="text" value="{{ff_stdb}}" class="a2"></td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>д.н.</td>
+<td><input type="text" value="{{ff_dob}}" class="a2"></td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{ff_breed}}" class="a2"></td>
+<td>Оц.екс.бал</td><td><input type="text" value="{{ff_test_score}}" class="a2"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{ff_por}}" class="a2"></td>
+<td>Клас</td><td><input type="text" value="{{ff_class}}" class="a2"></td>
+</tr>
+
+</tbody></table></td></tr>
+
+<tr>
+<td colspan="2" style="border-bottom: 2px solid;">
+
+<table style="width: 100%;" class="table3a"><tbody>
+
+<tr>
+<td style="width: 20%;">Днів лактації</td>
+<td style="width: 20%;">Надій</td>
+<td style="width: 20%;">Жир %</td>
+<td style="width: 20%;">Білок %</td>
+<td style="width: 20%;">Клас</td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{mm_lact_day/0}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_milk_kg/0}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_fat_perc/0}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_prot_perc/0}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_fat_class/0}}" class="a3"></td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{mm_lact_day/1}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_milk_kg/1}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_fat_perc/1}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_prot_perc/1}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_fat_class/1}}" class="a3"></td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{mm_lact_day/2}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_milk_kg/2}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_fat_perc/2}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_prot_perc/2}}" class="a3"></td>
+<td><input type="text" value="{{mm_lact_fat_class/2}}" class="a3"></td>
+</tr>
+
+</tbody></table></td>
+
+<td colspan="2" style="border-right: 2px solid; border-bottom: 2px solid; border-left: 2px solid;"><!--аа3-->
+
+<table style="width: 100%;" class="table3a">
+<tbody>
+
+<tr>
+<td style="width: 20%;">Днів лактації</td>
+<td style="width: 20%;">Надій</td>
+<td style="width: 20%;">Жир %</td>
+<td style="width: 20%;">Білок %</td>
+<td style="width: 20%;">Клас</td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{fm_lact_day/0}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_milk_kg/0}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_fat_perc/0}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_prot_perc/0}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_fat_class/0}}" class="a3"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{fm_lact_day/1}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_milk_kg/1}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_fat_perc/1}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_prot_perc/1}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_fat_class/1}}" class="a3"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{fm_lact_day/2}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_milk_kg/2}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_fat_perc/2}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_prot_perc/2}}" class="a3"></td>
+<td><input type="text" value="{{fm_lact_fat_class/2}}" class="a3"></td>
+</tr>
+
+</tbody></table></td>
+
+<td colspan="2" style="border-right: 2px solid; border-bottom: 2px solid;">
+
+<table style="width: 100%;" class="table3a"><tbody>
+
+<tr>
+<td style="width: 20%;">Днів лактації</td>
+<td style="width: 20%;">Надій</td>
+<td style="width: 20%;">Жир %</td>
+<td style="width: 20%;">Білок %</td>
+<td style="width: 20%;">Клас</td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{mf_lact_day/0}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_milk_kg/0}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_fat_perc/0}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_prot_perc/0}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_fat_class/0}}" class="a3"></td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{mf_lact_day/1}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_milk_kg/1}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_fat_perc/1}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_prot_perc/1}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_fat_class/1}}" class="a3"></td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{mf_lact_day/2}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_milk_kg/2}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_fat_perc/2}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_prot_perc/2}}" class="a3"></td>
+<td><input type="text" value="{{mf_lact_fat_class/2}}" class="a3"></td>
+</tr>
+
+</tbody></table></td>
+
+<td colspan="2" style="border-bottom: 2px solid;">
+<table style="width: 100%;" class="table3a"><tbody>
+
+<tr>
+<td style="width: 20%;">Днів лактації</td>
+<td style="width: 20%;">Надій</td>
+<td style="width: 20%;">Жир %</td>
+<td style="width: 20%;">Білок %</td>
+<td style="width: 20%;">Клас</td>
+</tr>
+
+<tr>
+<td><input type="text" value="{{ff_lact_day/0}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_milk_kg/0}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_fat_perc/0}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_prot_perc/0}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_fat_class/0}}" class="a3"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{ff_lact_day/1}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_milk_kg/1}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_fat_perc/1}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_prot_perc/1}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_fat_class/1}}" class="a3"></td>
+</tr>
+<tr>
+<td><input type="text" value="{{ff_lact_day/2}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_milk_kg/2}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_fat_perc/2}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_prot_perc/2}}" class="a3"></td>
+<td><input type="text" value="{{ff_lact_fat_class/2}}" class="a3"></td>
+</tr>
+
+</tbody></table></td></tr>
+
+<tr style="font-size: 10px;">
+
+<td style="width: 12.5%; border-right: 2px solid;"><!--а4-->
+
+<table style="width: 100%;" class="table4a"><tbody>
+
+<tr>
+<td colspan="2" style="text-align: left;">МММ&nbsp;&nbsp;<input type="text" value="{{mmm_name}}" class="a5"></td>
+</tr>
+
+<tr>
+<td style="width: 20%;">ID ABG</td><td><input type="text" value="{{mmm_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>ID UA</td><td><input type="text" value="{{mmm_code_ua}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{mmm_breed}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{mmm_por}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Клас</td><td><input type="text" value="{{mmm_class}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="{{mmm_prod}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="" class="a4"></td>
+</tr>
+
+
+</tbody></table></td>
+
+<td style="width: 12.5%; border-right: 2px solid;">
+
+<table style="width: 100%;" class="table4a"><tbody>
+
+<tr>
+<td colspan="2">БММ<input type="text" value="{{fmm_name}}" class="a5"></td>
+</tr>
+
+<tr>
+<td style="width: 20%;">ID ABG</td><td><input type="text" value="{{fmm_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>ID UA</td><td><input type="text" value="{{fmm_code_ua}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{fmm_breed}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{fmm_por}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Клас</td><td><input type="text" value="{{fmm_class}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="{{fmm_prod}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="" class="a4"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 12.5%; border-right: 2px solid;">
+
+<table style="width: 100%;" class="table4a">
+
+<tbody>
+
+<tr>
+<td colspan="2">МБМ<input type="text" value="{{mfm_name}}" class="a5"></td>
+</tr>
+
+<tr>
+<td style="width: 20%;">ID ABG</td><td><input type="text" value="{{mfm_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>ID UA</td><td><input type="text" value="{{mfm_code_ua}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Порода</td>
+<td><input type="text" value="{{mfm_breed}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Породн.</td>
+<td><input type="text" value="{{mfm_por}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Клас</td>
+<td><input type="text" value="{{mfm_class}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td>
+<td><input type="text" value="{{mfm_prod}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td>
+<td><input type="text" value="" class="a4"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 12.5%; border-right: 2px solid;">
+
+<table style="width: 100%;" class="table4a"><tbody>
+
+<tr>
+<td colspan="2">ББМ<input type="text" value="{{ffm_name}}" class="a5"></td>
+</tr>
+
+<tr>
+<td style="width: 20%;">ID ABG</td><td><input type="text" value="{{ffm_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>ID UA</td><td><input type="text" value="{{ffm_code_ua}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{ffm_breed}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{ffm_por}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Клас</td><td><input type="text" value="{{ffm_class}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="{{ffm_prod}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="" class="a4"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 12.5%; border-right: 2px solid;">
+
+<table style="width: 100%;" class="table4a"><tbody>
+
+<tr>
+<td colspan="2">ММБ<input type="text" value="{{mmf_name}}" class="a5"></td>
+</tr>
+
+<tr>
+<td style="width: 20%;">ID ABG</td><td><input type="text" value="{{mmf_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>ID UA</td><td><input type="text" value="{{mmf_code_ua}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{mmf_breed}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{mmf_por}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Клас</td><td><input type="text" value="{{mmf_class}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="{{mmf_prod}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="" class="a4"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 12.5%; border-right: 2px solid;">
+
+<table style="width: 100%;" class="table4a"><tbody>
+
+<tr>
+<td colspan="2">БМБ<input type="text" value="{{fmf_name}}" class="a5"></td>
+</tr>
+
+<tr>
+<td style="width: 20%;">ID ABG</td><td><input type="text" value="{{fmf_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>ID UA</td><td><input type="text" value="{{fmf_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{fmf_breed}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{fmf_por}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Клас</td><td><input type="text" value="{{fmf_class}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="{{fmf_prod}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="" class="a4"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 12.5%; border-right: 2px solid;">
+
+<table style="width: 100%;" class="table4a"><tbody>
+
+<tr>
+<td colspan="2">МББ<input type="text" value="{{mff_name}}" class="a5"></td>
+</tr>
+
+<tr>
+<td style="width: 20%;">ID ABG</td><td><input type="text" value="{{mff_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>ID UA</td><td><input type="text" value="{{mff_code_ua}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{mff_breed}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{mff_por}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Клас</td><td><input type="text" value="{{mff_class}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="{{mff_prod}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="" class="a4"></td>
+</tr>
+
+</tbody></table></td>
+
+<td style="width: 12.5%;">
+
+<table style="width: 100%;" class="table4a"><tbody>
+
+<tr>
+<td colspan="2">БББ<input type="text" value="{{fff_name}}" class="a5"></td>
+</tr>
+
+<tr>
+<td style="width: 20%;">ID ABG</td><td><input type="text" value="{{fff_code_abg}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>ID UA</td><td><input type="text" value="{{fff_code_ua}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Порода</td><td><input type="text" value="{{fff_breed}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Породн.</td><td><input type="text" value="{{fff_por}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Клас</td><td><input type="text" value="{{fff_class}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="{{fff_prod}}" class="a4"></td>
+</tr>
+
+<tr>
+<td>Прод.</td><td><input type="text" value="" class="a4"></td>
+</tr>
+
+</tbody></table></td></tr></tbody></table></div></div></div></div>
+</body></html>
